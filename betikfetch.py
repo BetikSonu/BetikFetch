@@ -61,7 +61,7 @@ if __name__ == "__main__":
     temp_value = info.colorIt(temp_value_str,float,70,10,"℃")
     fan_value = info.colorIt(info.fan,int,5000,1000," RPM")
     login_value = f"\033[4m{getlogin()}\033[0m"
-    battery_value = info.colorItButReverse(info.battery[0],int,15,15,"% "+info.battery[1])
+    battery_value = info.colorItButReverse(info.battery[0],int,15,-15,"% "+info.battery[1])
     
 
 
