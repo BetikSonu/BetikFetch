@@ -6,8 +6,6 @@ class betikfetch():
     def __init__(self):
         __author__ = "raifpy"
         
-        self.rn = [f"\33[{i}m" for i in range(30,40)]
-        self.by = "\033[0m"
         self.core = psutil.cpu_count()
         self.frequance = psutil.cpu_freq().current
         self.percent = psutil.cpu_percent()
@@ -26,7 +24,7 @@ class betikfetch():
     
     @staticmethod
     def colorItButReverse(var , var_type ,medium,ladder,value):
-        var = var_type(var) # 4
+        var = var_type(var)
         if var > medium:    
             return f"\033[32m{var}{value}\033[0m"
         elif var <= medium and var > medium-ladder:
